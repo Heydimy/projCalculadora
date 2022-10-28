@@ -2,8 +2,8 @@ const express = require('express')
 const Calculadora = require("./Controller/Rotas")
 
 const app = express()
-
-app.listen("3000", ()=>{
+const porta = process.env.PORT || 3000
+app.listen(porta, ()=>{
     console.log("Iniciamos o Sistema!")
 })
 
